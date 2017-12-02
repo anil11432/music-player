@@ -1,0 +1,153 @@
+.back-image{
+	background-image: url('src/bkimg.jpg');
+	background-repeat: no-repeat;
+	background-size:  100% 120%;
+	overflow: hidden;
+
+}
+
+.list{
+	position: absolute;
+	left: 50px;
+	display: block;
+	height: 500px;
+	width: 10%;
+}
+
+
+
+
+#playlist li a{
+	color: #d38a02;
+	text-decoration: none;
+}
+
+#playlist .current-song a{
+	color:blue;
+}
+
+.font{
+	font-weight: bold;
+	text-align: center;
+
+}
+
+#verycenter{
+	position: absolute;
+	height: 300px;
+	width: 400px;
+
+	display: block;
+}
+
+ul{
+	color: green;
+	font-weight: 700;
+	font-size: 20px;
+}
+
+
+.spiner{
+	position: absolute;
+	height: 200px;
+	width: 200px;
+	margin-left: 75px;
+	margin-top: 20px;
+}
+
+
+.spin-cw{
+	-webkit-animation: rotation 2s infinite linear;
+
+}
+
+
+
+@-webkit-keyframes rotation {
+		from {
+				-webkit-transform: rotate(0deg);
+		}
+		to {
+				-webkit-transform: rotate(360deg);
+		}
+}
+
+
+.spiner2{
+	position: relative;
+	height: 160px;
+	width: 160px;
+	margin-left: 95px;
+	margin-top: 42px;
+}
+
+.spin-ccw{
+	-webkit-animation: rotation2 2s infinite linear;
+
+}
+
+
+
+@-webkit-keyframes rotation2 {
+		from {
+				-webkit-transform: rotate(360deg);
+		}
+		to {
+				-webkit-transform: rotate(0deg);
+		}
+}
+
+
+.container1 {
+  position: relative;
+  width: 50%;
+  z-index: 10;
+  height: 200px;
+	width: 200px;
+
+}
+
+.overlay {
+	position: absolute;
+	width: 300px;
+	margin-left: 30px;
+	margin-top: 270px;
+  	overflow: hidden;
+	display: none;
+}
+
+
+.pulse{
+	-webkit-animation-name: pulse;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-timing-function: linear;
+}
+
+@-webkit-keyframes pulse {
+		from {
+				-webkit-transform: scale(1.3);
+		}
+		to {
+				-webkit-transform: scale(1);
+		}
+}
+
+
+.btn{
+	font-size: 50px;
+	border-radius: 12px;
+	-webkit-transition-duration: 0.8s;
+	background-color: black;
+	color: white;
+}
+
+.btn:hover{
+    background-color: white;
+    color: black;
+}
+.navigate{
+	display: none;
+	text-align: center;
+}
+
+

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Audio Player</title>
+	<link rel="stylesheet" type="text/css" href="player.css">
+
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+</head>
+<body class="back-image ">
+	<h1 class="font">Play it LOUD</h1>
+	<div class="row" >	
+
+		<div id="verycenter" class="col-md-8 col-sm-12 ">
+			<audio controls id="audioPlayer" class="overlay">
+				Sorry your browzer doesn't support mp3. Please use chrome.
+			</audio>
+			<div class="container1 pulse" id="beat">
+				<img src="src/circle.png" class="spiner " id="logo1" alt="...">
+				<img src="src/spiner.png" class="spiner2" id="logo2" alt="...">
+			</div>
+		</div>
+		
+		<div class="list col-md-4 col-sm-12">
+		<h2>SONGS LIST</h2>
+			<ul id="playlist">
+				<li data-duration="0.7s"><a href="musicFiles/music1.mp3" id="first-song">Despacito.</a></li>
+				<li  data-duration="0.4s" id="2"><a href="musicFiles/music2.mp3">Gangnam style.</a></li>
+				<li  data-duration="3.6s" id="3"><a href="musicFiles/music3.mp3">Someone like you.</a></li>
+				<li data-duration="0.4s"><a href="musicFiles/music4.mp3">Shape of you.</a></li>
+			</ul>
+		</div>
+
+	</div>
+
+	<div class="navigate">
+		<div class="btn-group " role="group" aria-label="...">
+			  <div class="btn-group" role="group">
+			    <button id="Prev" type="button" class="btn"> <span class="glyphicon glyphicon-fast-backward"></span> Prev</button>
+			  </div>
+			  <div class="btn-group" role="group">
+			    <button id="toggle" type="button" class="btn"> <span id="play" class="glyphicon glyphicon-play"></span> <span id="pause" class="glyphicon glyphicon-pause"></span> Play</button>
+			  </div>
+			  <div class="btn-group" role="group">
+			    <button id="Next" type="button" class="btn">Next <span class="glyphicon glyphicon-fast-forward"></span></button>
+			  </div>
+		</div>
+	</div>
+<script type="text/javascript" src="jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="player.js"></script>
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script type="text/javascript">
+	audioPlayer();
+	//call the function audioplayer//
+</script>
+</div>
+</body>
+</html>
